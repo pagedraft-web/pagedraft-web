@@ -1,0 +1,5 @@
+{
+  "name": "PageDraft",
+  "description": "A professional blog and content management platform built with React, TypeScript, and PocketBase. Features a clean white-and-orange aesthetic with full authentication and blog management.",
+  "requestFramePermissions": []
+}

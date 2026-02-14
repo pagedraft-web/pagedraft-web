@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Metadata -->
+    <title>PageDraft | Professional Content Management & Minimalist Blogging Platform</title>
+    <meta name="title" content="PageDraft | Professional Content Management & Minimalist Blogging Platform">
+    <meta name="description" content="PageDraft is a high-performance, minimalist content drafting platform. Designed for visionary creators, it offers a secure, lightning-fast workspace for writing and publishing professional drafts.">
+    <meta name="keywords" content="PageDraft, minimalist blogging, content drafting, professional writing platform, developer blog, PocketBase, React CMS, high-performance content management, minimalist design">
+    <meta name="author" content="PageDraft Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Styles and Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Quill Rich Text Editor Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+
+    <style>
+        :root {
+            --orange: #f97316;
+            --black: #000000;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-white text-black selection:bg-orange-500 selection:text-white;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        /* Neobrutalist Shadow Utility */
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px var(--black);
+        }
+        .neo-shadow-orange {
+            box-shadow: 4px 4px 0px 0px var(--orange);
+        }
+        .neo-shadow-lg {
+            box-shadow: 8px 8px 0px 0px var(--black);
+        }
+        .neo-shadow-hover:hover {
+            box-shadow: 0px 0px 0px 0px var(--black);
+            transform: translate(4px, 4px);
+        }
+
+        /* Grid Pattern */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, #f3f4f6 1px, transparent 1px),
+                linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #000;
+            border: 2px solid #fff;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f97316;
+        }
+
+        /* Quill Custom Theme Overrides */
+        .ql-toolbar.ql-snow {
+            border: 3px solid #000 !important;
+            border-bottom: none !important;
+            padding: 12px !important;
+            background: white;
+        }
+        .ql-container.ql-snow {
+            border: 3px solid #000 !important;
+            font-family: 'Inter', sans-serif !important;
+            font-size: 16px !important;
+            min-height: 400px;
+            background: white;
+        }
+        .ql-editor.ql-blank::before {
+            color: #9ca3af !important;
+            font-style: normal !important;
+        }
+        .ql-snow.ql-toolbar button:hover .ql-stroke,
+        .ql-snow.ql-toolbar button:hover .ql-fill,
+        .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+        .ql-snow.ql-toolbar button.ql-active .ql-fill {
+            fill: #f97316 !important;
+            stroke: #f97316 !important;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "vite": "https://esm.sh/vite@^7.3.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="selection:bg-orange-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
